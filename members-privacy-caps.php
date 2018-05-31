@@ -127,7 +127,14 @@ function map_meta_cap( $caps, $cap ) {
  	];
 
  	if ( in_array( $cap, $privacy_caps ) ) {
- 		$caps = [ $cap ];
+
+		$caps = [ $cap ];
+
+		// Core WP requires the 'delete_users' cap here, so we're going
+		// to add this as a required cap too.
+		if ( 'erase_others_personal_data' === $cap ) {
+			$caps[] = 'delete_users';
+		}
  	}
 
  	return $caps;

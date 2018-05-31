@@ -30,6 +30,10 @@ The plugin adds the following capabilities:
 
 These capabilities are granted to the `administrator` role upon plugin activation. They can be granted to additional roles via the edit role screen just like you'd do with any other capabilities using the Members plugin.  By default, they are displayed to the "General" capabilities tab.
 
+### Erasing personal data
+
+The `erase_others_personal_data` capability must be used in conjunction with the `delete_users` capability.  This is how core WP is set up.  It makes sense when you think about it.  Users shouldn't be able to erase others' data without high enough permission to actually delete the actual user account.
+
 ### Multisite
 
 If you're on a multisite setup, the new capabilities (see above) are not automatically added to administrators.  This is because WordPress, by default, considers the privacy and personal data features a "super admin" privilege.  You may assign these capabilities to administrators or other roles on a per-site basis.
