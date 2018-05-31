@@ -22,13 +22,16 @@ You should also have, at minimum, PHP 5.6 installed on your server.  If you're u
 
 ### Usage
 
-The plugin adds the following capabilities:
+The plugin adds the following capabilities to the "General" tab on the edit role screen:
+
+* **Manage Privacy Options** (`manage_privacy_options`) - Allows you to manage the site or network's privacy options, including the privacy page.
+
+The plugin adds the following capabilities to the "Users" tab on the edit role screen:
 
 * **Export Others' Personal Data** (`export_others_personal_data`) - Allows you to export personal data for users other than your own.
 * **Erase Others' Personal Data** (`erase_others_personal_data`) - Allows you to erase personal data for users other than your own.
-* **Manage Privacy Options** (`manage_privacy_options`) - Allows you to manage the site or network's privacy options, including the privacy page.
 
-These capabilities are granted to the `administrator` role upon plugin activation. They can be granted to additional roles via the edit role screen just like you'd do with any other capabilities using the Members plugin.  By default, they are displayed to the "General" capabilities tab.
+These capabilities are granted to the `administrator` role upon plugin activation. They can be granted to additional roles via the edit role screen just like you'd do with any other capabilities using the Members plugin.
 
 ### Erasing personal data
 
