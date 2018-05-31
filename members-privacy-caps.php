@@ -111,7 +111,8 @@ function register_caps() {
 
 /**
  * The privacy caps are mapped to `manage_options` (or `manage_network` in the
- * case of multisite) by default.
+ * case of multisite) by default, effectively making them meta caps.  We're
+ * turning the caps into primitive caps.
  *
  * @since  1.0.0
  * @access public
@@ -129,10 +130,13 @@ function map_meta_cap( $caps, $cap ) {
 
  	if ( in_array( $cap, $privacy_caps ) ) {
 
+		// The cap should map back to itself.
 		$caps = [ $cap ];
 
-		// Core WP requires the 'delete_users' cap here, so we're going
-		// to add this as a required cap too.
+		// Core WP requires the 'delete_users' cap when erasing a user's
+		// personal data. This becomes even more important on multisite
+		// where even a sub-site admin might not be able to delete users.
+		// So, we're adding this as a required cap too.
 		if ( 'erase_others_personal_data' === $cap ) {
 			$caps[] = 'delete_users';
 		}
