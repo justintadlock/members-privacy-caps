@@ -1,0 +1,56 @@
+# Copyright (C) 2018 Justin Tadlock
+# This file is distributed under the same license as the Members - Privacy Caps package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Members - Privacy Caps 1.0.0-dev\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/members-privacy-caps\n"
+"POT-Creation-Date: 2018-05-31 15:51:32+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: dist/members-privacy-caps/members-privacy-caps.php:91
+#: members-privacy-caps.php:97
+msgid "Export Others' Personal Data"
+msgstr ""
+
+#: dist/members-privacy-caps/members-privacy-caps.php:92
+#: members-privacy-caps.php:98
+msgid "Erase Others' Personal Data"
+msgstr ""
+
+#: dist/members-privacy-caps/members-privacy-caps.php:93
+#: members-privacy-caps.php:99
+msgid "Manage Privacy Options"
+msgstr ""
+
+#: dist/members-privacy-caps/uninstall.php:17 uninstall.php:17
+#. Translators: %s is the file name wrapped in a code tag.
+msgid "%s should only be called when uninstalling the plugin."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Members - Privacy Caps"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://themehybrid.com/plugins/members-privacy-caps"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Creates additional capabilities for control over WordPress' privacy and "
+"personal data features."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Justin Tadlock"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://themehybrid.com"
+msgstr ""
