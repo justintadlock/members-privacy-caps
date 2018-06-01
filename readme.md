@@ -33,6 +33,12 @@ The plugin adds the following capabilities to the "Users" tab on the edit role s
 
 These capabilities are granted to the `administrator` role upon plugin activation. They can be granted to additional roles via the edit role screen just like you'd do with any other capabilities using the Members plugin.
 
+### Managing privacy options
+
+Currently, there's a bug in WordPress ([Trac ticket](https://core.trac.wordpress.org/ticket/22895)) that won't allow users without `manage_options` to see sub-menu items of "Settings" in the admin, even if the user has permission to do so.  There's nothing this plugin can do to address this.  Therefore, if you have the `manage_privacy_options` but not the `manage_options` capability, you won't be able to access the "Privacy" page in the admin.
+
+However, you will be able to edit the Privacy Policy page if one has been set for the site under the "Pages" screen in the admin.  Of course, you'll need the appropriate page-editing capabilities for editing the page.
+
 ### Erasing personal data
 
 The `erase_others_personal_data` capability must be used in conjunction with the `delete_users` capability.  This is how core WP is set up.  It makes sense when you think about it.  Users shouldn't be able to erase others' data without high enough permission to actually delete the actual user account.
