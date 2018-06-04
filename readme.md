@@ -2,7 +2,7 @@
 
 Members - Privacy Caps is an add-on for the [Members plugin](https://themehybrid.com/plugins/members) that creates additional capabilities related to the privacy and personal data features added in WordPress 4.9.6.  For some people, these are known as the GDPR tools.
 
-_Please note that this is a commercial plugin.  It is public here on GitHub so that anyone can contribute to its development or easily post bugs.  If using on a live site, please [purchase a copy of the plugin](https://themehybrid.com/plugins/members-admin-access)._
+_Please note that this is a commercial plugin.  It is public here on GitHub so that anyone can contribute to its development or easily post bugs.  If using on a live site, please [purchase a copy of the plugin](https://themehybrid.com/plugins/members-privacy-caps)._
 
 ## Professional Support
 
