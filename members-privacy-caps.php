@@ -3,7 +3,7 @@
  * Plugin Name: Members - Privacy Caps
  * Plugin URI:  https://themehybrid.com/plugins/members-privacy-caps
  * Description: Creates additional capabilities for control over WordPress' privacy and personal data features.
- * Version:     1.0.0-dev
+ * Version:     1.0.0
  * Author:      Justin Tadlock
  * Author URI:  https://themehybrid.com
  * Text Domain: members-privacy-caps
