@@ -35,9 +35,11 @@ These capabilities are granted to the `administrator` role upon plugin activatio
 
 ### Managing privacy options
 
-Currently, there's a bug in WordPress ([Trac ticket](https://core.trac.wordpress.org/ticket/22895)) that won't allow users without `manage_options` to see sub-menu items of "Settings" in the admin, even if the user has permission to do so.  There's nothing this plugin can do to address this.  Therefore, if you have the `manage_privacy_options` but not the `manage_options` capability, you won't be able to access the "Privacy" page in the admin.
+Currently, there's a bug in WordPress ([Trac ticket](https://core.trac.wordpress.org/ticket/22895)) that won't allow users without `manage_options` to see sub-menu items of "Settings" in the admin, even if the user has permission to do so.  There's nothing this plugin can do to address this.  Therefore, if you have the `manage_privacy_options` but not the `manage_options` capability, you won't be able to access the Settings > Privacy page in the admin.
 
 However, you will be able to edit the Privacy Policy page if one has been set for the site under the "Pages" screen in the admin.  Of course, you'll need the appropriate page-editing capabilities for editing the page.
+
+A good use case for this is to give Editors (or a similar role) the `manage_privacy_options` cap to allow them to actually make copyediting changes to the page.
 
 ### Erasing personal data
 
@@ -45,4 +47,4 @@ The `erase_others_personal_data` capability must be used in conjunction with the
 
 ### Multisite
 
-If you're on a multisite setup, the new capabilities (see above) are not automatically added to administrators.  This is because WordPress, by default, considers the privacy and personal data features a "super admin" privilege.  You may assign these capabilities to administrators or other roles on a per-site basis.
+If you're on a multisite setup, the new capabilities (see above) are not automatically added to administrators on each sub-site.  This is because WordPress, by default, considers the privacy and personal data features a "super admin" privilege.  You may assign these capabilities to administrators or other roles on a per-site basis if you feel like your administrators should have these permissions.
