@@ -93,20 +93,20 @@ function load_textdomain() {
  */
 function register_caps() {
 
-	members_register_cap( 'export_others_personal_data', [
-		'label' => __( "Export Others' Personal Data", 'members-privacy-caps' ),
-		'group' => 'user'
-	] );
+	members_register_cap( 'manage_privacy_options', [
+		'label' => __( 'Manage Privacy Options', 'members-privacy-caps' ),
+		'group' => 'general'
+ 	] );
 
 	members_register_cap( 'erase_others_personal_data', [
 		'label' => __( "Erase Others' Personal Data", 'members-privacy-caps' ),
 		'group' => 'user'
 	] );
 
-	members_register_cap( 'manage_privacy_options', [
-		'label' => __( 'Manage Privacy Options', 'members-privacy-caps' ),
-		'group' => 'general'
- 	] );
+	members_register_cap( 'export_others_personal_data', [
+		'label' => __( "Export Others' Personal Data", 'members-privacy-caps' ),
+		'group' => 'user'
+	] );
 }
 
 /**
